@@ -143,6 +143,10 @@ PRODUCT_PACKAGES += \
     Updater \
     WeatherProvider
 
+# LongShot
+PRODUCT_PACKAGES += \
+    Longshot
+
 # Accents
 PRODUCT_PACKAGES += \
     LineageBlackTheme \
