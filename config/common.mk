@@ -52,7 +52,13 @@ PRODUCT_COPY_FILES += \
 $(foreach f,$(wildcard vendor/lineage/prebuilt/common/etc/init/*.rc),\
 	$(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
 
+# Fonts
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/lineage/prebuilt/common/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
+    vendor/lineage/prebuilt/common/etc/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
+
 # Copy over added mimetype supported in libcore.net.MimeUtils
+# Power whitelist
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/lib/content-types.properties:$(TARGET_COPY_OUT_SYSTEM)/lib/content-types.properties
 
@@ -241,6 +247,10 @@ PRODUCT_PACKAGES += \
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
     procmem
+
+# font packages
+PRODUCT_PACKAGES += \
+    FontUbuntuOverlay
 
 # Conditionally build in su
 ifneq ($(TARGET_BUILD_VARIANT),user)
