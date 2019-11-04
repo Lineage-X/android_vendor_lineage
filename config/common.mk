@@ -250,7 +250,8 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # font packages
 PRODUCT_PACKAGES += \
-    FontUbuntuOverlay
+    FontUbuntuOverlay \
+    FontOpenSansOverlay
 
 # Conditionally build in su
 ifneq ($(TARGET_BUILD_VARIANT),user)
