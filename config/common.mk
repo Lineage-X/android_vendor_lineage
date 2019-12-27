@@ -231,6 +231,13 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
 
+# NavigationBar Gestural Mode No Pill Overlays
+PRODUCT_PACKAGES += \
+    NavBarGesturalNoPillOverlay \
+    NavBarGesturalNarrowBackNoPillOverlay \
+    NavBarGesturalWideBackNoPillOverlay \
+    NavBarGesturalExtraWideBackNoPillOverlay
+
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
     procmem
