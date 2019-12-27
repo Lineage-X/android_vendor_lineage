@@ -121,6 +121,13 @@ PRODUCT_PACKAGES += \
     LineageThemesStub \
     ThemePicker
 
+# NavigationBar Gestural Mode No Pill Overlays
+PRODUCT_PACKAGES += \
+    NavBarGesturalNoPillOverlay \
+    NavBarGesturalNarrowBackNoPillOverlay \
+    NavBarGesturalWideBackNoPillOverlay \
+    NavBarGesturalExtraWideBackNoPillOverlay
+
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
     7z \
