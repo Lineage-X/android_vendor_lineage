@@ -252,7 +252,8 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     FontUbuntuOverlay \
     FontOpenSansOverlay \
-    FontCaviarDreamsOverlay
+    FontCaviarDreamsOverlay \
+    FontExotwoOverlay
 
 # Conditionally build in su
 ifneq ($(TARGET_BUILD_VARIANT),user)
