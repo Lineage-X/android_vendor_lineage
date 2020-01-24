@@ -255,7 +255,8 @@ PRODUCT_PACKAGES += \
     FontCaviarDreamsOverlay \
     FontExotwoOverlay \
     FontSnigletOverlay \
-    FontSignikaOverlay
+    FontSignikaOverlay \
+    FontOxaniumOverlay
 
 # Conditionally build in su
 ifneq ($(TARGET_BUILD_VARIANT),user)
