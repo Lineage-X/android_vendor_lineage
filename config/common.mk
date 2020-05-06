@@ -137,6 +137,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Longshot
 
+# MarkupGoogle
+PRODUCT_PACKAGES += \
+    MarkupGoogle 
+
 # Accents
 PRODUCT_PACKAGES += \
     LineageBlackTheme \
@@ -273,6 +277,11 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
+# Markup Google
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
+    vendor/lineage/prebuilt/common/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
+
 # Product version should match Android version
 PRODUCT_VERSION_MAJOR = 10
 PRODUCT_VERSION_MINOR = 0
@@ -334,3 +343,4 @@ PRODUCT_COPY_FILES += \
     vendor/lineage/fonts/GoogleSans-Italic.ttf:system/fonts/GoogleSans-Italic.ttf \
     vendor/lineage/fonts/GoogleSans-Bold.ttf:system/fonts/GoogleSans-Bold.ttf \
     vendor/lineage/fonts/GoogleSans-BoldItalic.ttf:system/fonts/GoogleSans-BoldItalic.ttf
+
