@@ -118,6 +118,10 @@ PRODUCT_PACKAGES += \
     LineageSetupWizard \
     Updater
 
+# MarkupGoogle
+PRODUCT_PACKAGES += \
+    MarkupGoogle
+
 # Themes
 PRODUCT_PACKAGES += \
     LineageThemesStub \
@@ -226,6 +230,11 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
+
+# Markup Google
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
+    vendor/lineage/prebuilt/common/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
 
 # Product version should match Android version
 PRODUCT_VERSION_MAJOR = 10
