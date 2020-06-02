@@ -27,6 +27,7 @@ PRODUCT_PACKAGES += \
     AudioFX \
     Backgrounds \
     Eleven \
+    Etar \
     Jelly \
     LockClock \
     Profiles \
@@ -59,6 +60,10 @@ PRODUCT_PACKAGES += \
     font_log.png \
     libhealthd.lineage
 endif
+
+# Customizations
+PRODUCT_PACKAGES += \
+    LineageNavigationBarNoHint
 
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
