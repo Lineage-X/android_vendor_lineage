@@ -118,10 +118,6 @@ PRODUCT_PACKAGES += \
     LineageSetupWizard \
     Updater
 
-# LongShot
-PRODUCT_PACKAGES += \
-    Longshot
-
 # MarkupGoogle
 PRODUCT_PACKAGES += \
     MarkupGoogle 
