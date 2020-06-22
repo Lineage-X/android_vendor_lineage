@@ -217,6 +217,10 @@ PRODUCT_PACKAGES += \
     mkfs.ntfs \
     mount.ntfs
 
+# Long Screenshot
+PRODUCT_PACKAGES += \
+    StitchImage
+
 # Openssh
 PRODUCT_PACKAGES += \
     scp \
